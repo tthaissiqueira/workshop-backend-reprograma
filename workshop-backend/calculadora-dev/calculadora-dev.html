@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculadora Dev</title>
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/desafio.css" />
+  </head>
+  <body>
+    <nav class="barra-navegacao">
+      <img
+        class="barra-navegacao__logotipo"
+        src="img/logotipo-reprograma.png"
+      />
+    </nav>
+    <header class="cabecalho">
+      <h1 class="cabecalho__titulo">Precifique seu projeto de Dev</h1>
+    </header>
+    <main class="conteudo-principal">
+      <section class="secao secao-hora">
+        <article class="secao__conteudo">
+          <div class="secao__formulario">
+            <fieldset>
+              <legend>Quanto custa sua hora?</legend>
+              <div class="secao__formulario__grupo">
+                <label for="valorhora">Valor por hora</label>
+                <input id="valorhora" type="number" value="0" />
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Quantas horas durou o projeto?</legend>
+              <div class="secao__formulario__grupo">
+                <label for="horas">Horas</label>
+                <input id="horas" type="number" value="0" />
+              </div>
+            </fieldset>
+            <button onclick="calcularValorHora()">Calcular</button>
+          </div>
+        </article>
+        <footer class="secao__rodape">
+          <p class="secao__rodape__legenda">Você deve cobrar:</p>
+          <h3 class="secao__rodape__valor">
+            <span id="resposta">R$ 0,00</span>
+          </h3>
+          
+        </footer>
+      </section>
+
+    </main>
+    <footer class="rodape">Feito com muito <a href="calculadora-freelancer.html">♥</a></footer>
+
+    <script type="text/javascript" src="js/desafio.js"></script>
+  </body>
+</html>
